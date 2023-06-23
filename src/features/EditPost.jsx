@@ -15,7 +15,7 @@ const EditPost = () => {
     useEffect(()=>{
         const fetchCurrentPost = async ()=>{
           try {
-            const res = await axios.get(`https://mern-crud-auth-2023-api.onrender.com/api/post/${params.id}`)
+            await axios.get(`https://mern-crud-auth-2023-api.onrender.com/api/post/${params.id}`)
             setInputs(res.data)
             console.log(res)
           } catch (error) {

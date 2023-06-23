@@ -16,7 +16,7 @@ const AddPost = () => {
         setInputs({title: '', description : ''})
         
         try {
-            const res = await axios.post('https://mern-crud-auth-2023-api.onrender.com/api/post/create',{
+               await axios.post('https://mern-crud-auth-2023-api.onrender.com/api/post/create',{
                 title:inputs.title,
                 description: inputs.description
             })

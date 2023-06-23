@@ -14,12 +14,7 @@ import {
     REGISTER,
 } from 'redux-persist';
 
-const store = configureStore({
-    reducer  : {
-       auth     : authReducer,
-    }
- });
- 
+
  const persistConfig = {
     key: 'counter',
     storage,
@@ -38,3 +33,4 @@ export default configureStore({
             },
         }),
 });
+
