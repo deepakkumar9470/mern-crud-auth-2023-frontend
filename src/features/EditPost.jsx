@@ -29,7 +29,7 @@ const EditPost = () => {
       setInputs({title: '', description : ''})
       
       try {
-          const res = await axios.put(`http://localhost:5000/api/post/${params.id}`,{
+          await axios.put(`http://localhost:5000/api/post/${params.id}`,{
               title:inputs.title,
               description: inputs.description
           })
